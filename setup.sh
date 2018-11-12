@@ -39,7 +39,7 @@ function install() {
     gdrive list && \
     BREWFILEID="$(gdrive list | grep Brewfile | awk '{print $1}')"
   gdrive download $BREWFILEID --path ~ && \
-    brew bundle && \
+    brew bundle --file=~/Brewfile && \
     rm -f Brewfile
   curl http://magicprefs.com/MagicPrefs.app.zip -o /tmp/MagicPrefs.app.zip && \
     unzip /tmp/MagicPrefs.app.zip -d /Applications && \
