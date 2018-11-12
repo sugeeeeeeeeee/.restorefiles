@@ -46,9 +46,9 @@ function install() {
     rm -rf /tmp/MagicPrefs.app.zip
 
   echo "[INFO].DOTFILES COPY"
-  cp -p .dotfiles/tmux/.tmux.conf ~
-  cp -p .dotfiles/zsh/.zshrc ~
-  cp -p .dotfiles/vim/.vimrc ~
+  cp -p ~/.restorefiles/tmux/.tmux.conf ~
+  cp -p ~/.restorefiles/zsh/.zshrc ~
+  cp -p ~/.restorefiles/vim/.vimrc ~
 
   echo "[INFO]COLORSCHEME DOWNLOAD"
   mkdir ~/scheme && \
@@ -67,8 +67,7 @@ function install() {
     cd ~
 
   echo "[INFO]POWERLINE-GO DOWNLOAD"
-  curl https://github.com/justjanne/powerline-go/releases/download/v1.11.0/powerline-go-darwin-amd64 -o /usr/local/bin/ && \
-    mv /usr/local/bin/powerline-go-darwin-amd64 /usr/local/bin/powerline-go && \
+  curl https://github.com/justjanne/powerline-go/releases/download/v1.11.0/powerline-go-darwin-amd64 -o /usr/local/bin/powerline-go && \
     chmod +x /usr/local/bin/powerline-go
 
   echo "[INFO].SSH DOWNLOAD"
