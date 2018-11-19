@@ -366,7 +366,7 @@ case ${OSTYPE} in
 esac
 
 # kubectl
-abbrev-alias kb='kubectl'
+alias k='kubectl'
 
 ########################################
 # tmuxの設定
