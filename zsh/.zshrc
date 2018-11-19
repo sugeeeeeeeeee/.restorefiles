@@ -365,6 +365,9 @@ case ${OSTYPE} in
     ;;
 esac
 
+# kubectl
+alias k='kubectl'
+
 ########################################
 # tmuxの設定
 # 自動ロギング
