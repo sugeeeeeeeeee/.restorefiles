@@ -5,6 +5,7 @@ export LANG=ja_JP.UTF-8
 export GOPATH=$HOME/dev
 export MANPATH=/usr/local/opt/inetutils/libexec/gnuman:$MANPATH
 export PATH=/usr/local/bin:/usr/local/opt/inetutils/libexec/gnubin:$GOPATH/bin:$PATH
+export PATH=/usr/local/octave/3.8.0/bin:$PATH
 
 #エディタをvimに設定
 export EDITORP=vim
