@@ -138,7 +138,6 @@ function install() {
 
   echo "[INFO]OCTAVE INSTALL"
   brew install gnuplot --with-aquaterm --with-x11 &&\
-  brew install octave
 
   echo "[END]NORMALLY END!!"
 }
